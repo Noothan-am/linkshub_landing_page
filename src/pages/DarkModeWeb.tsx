@@ -1,6 +1,7 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState } from "react";
 import styles from "./DarkModeWeb.module.css";
 const DarkModeWeb: FunctionComponent = () => {
+  const [emailValue, setEmailValue] = useState('');
   return (
     <div className={styles.darkModeWeb}>
       <img
@@ -28,22 +29,24 @@ const DarkModeWeb: FunctionComponent = () => {
           </div>
         </div>
         <div className={styles.landingPageTitleTextParent}>
-          <a className={styles.landingPageTitleText}>
+
+          <a className={styles.landingPageTitleText} href="#">
             <div className={styles.home}>HOME</div>
             <div className={styles.landingPageTitleTextChild} />
           </a>
-          <a className={styles.landingPageTitleText1}>
+
+          <a className={styles.landingPageTitleText1} href="/about">
             <div className={styles.home}>ABOUT US</div>
             <div className={styles.landingPageTitleTextItem} />
           </a>
-          <div className={styles.landingPageTitleText2}>
+          <a className={styles.landingPageTitleText1} href="/about">
             <div className={styles.home}>RESOURCES</div>
-            <div className={styles.landingPageTitleTextInner} />
-          </div>
-          <div className={styles.landingPageTitleText2}>
+            <div className={styles.landingPageTitleTextItem} />
+          </a>
+          <a className={styles.landingPageTitleText1} href="/about">
             <div className={styles.home}>CONTACT</div>
-            <div className={styles.frameDiv} />
-          </div>
+            <div className={styles.landingPageTitleTextItem} />
+          </a>
         </div>
         <img className={styles.wbSunnyIcon} alt="" src="/wb-sunny.svg" />
       </div>
@@ -58,25 +61,25 @@ const DarkModeWeb: FunctionComponent = () => {
               </div>
             </div>
             <div className={styles.socialIcons}>
-              <button className={styles.facebook} />
-              <button className={styles.twitter} />
-              <button className={styles.instagram} />
+              <a className={styles.facebook} href="/" />
+              <a className={styles.twitter} href="/" />
+              <a className={styles.instagram} href="/" />
             </div>
           </div>
           <div className={styles.quicklinks}>
             <div className={styles.home}>Quick Links</div>
             <div className={styles.homeParent}>
-              <div className={styles.support}>Home</div>
-              <div className={styles.support}>About us</div>
-              <div className={styles.support}>Resources</div>
+              <a className={styles.support} href="/">Home</a>
+              <a className={styles.support} href="/">About us</a>
+              <a className={styles.support} href="/">Resources</a>
             </div>
           </div>
           <div className={styles.quicklinks}>
             <div className={styles.home}>Contact</div>
             <div className={styles.homeParent}>
-              <div className={styles.support}>Support</div>
-              <div className={styles.support}>Privacy policy</div>
-              <div className={styles.support}>Contact Us</div>
+              <a className={styles.support} href="/">Support</a>
+              <a className={styles.support} href="/">Privacy policy</a>
+              <a className={styles.support} href="/">Contact Us</a>
             </div>
           </div>
           <div className={styles.quicklinks}>
@@ -93,9 +96,11 @@ const DarkModeWeb: FunctionComponent = () => {
                 className={styles.frameChild}
                 type="text"
                 placeholder="Enter your email"
+                value={emailValue}
+                onChange={(e) => { setEmailValue(e.target.value) }}
               />
               <button className={styles.subscribeWrapper}>
-                <div className={styles.subscribe1}>{`Subscribe `}</div>
+                <div className={styles.subscribe1} onClick={() => { }}>Subscribe </div>
               </button>
             </div>
           </div>
@@ -139,17 +144,15 @@ const DarkModeWeb: FunctionComponent = () => {
               </div>
             </div>
           </div>
-          <div className={styles.viewAllResources}>
-            <div
-              className={styles.viewAllResources1}
-            >{`View all resources >>`}</div>
-          </div>
+          <a className={styles.viewAllResources} href="/">
+            <div className={styles.viewAllResources1}>View all resources</div>
+          </a>
         </div>
       </div>
       <div className={styles.groupWrapper}>
         <img className={styles.groupIcon} alt="" src="/group.svg" />
       </div>
-      <button className={styles.button}>
+      <button className={styles.button} onClick={() => { }}>
         <div className={styles.button1}>
           <div className={styles.buttonText}>Get Started</div>
         </div>
@@ -214,7 +217,7 @@ const DarkModeWeb: FunctionComponent = () => {
                 information available.
               </p>
               <p className={styles.readMore}>&nbsp;</p>
-              <p className={styles.readMore}>{`Read more>>`}</p>
+              <a className={styles.readMore} href="/">{`Read more>>`}</a>
             </div>
           </div>
           <img
@@ -313,7 +316,7 @@ const DarkModeWeb: FunctionComponent = () => {
               src="/connector2.svg"
             />
           </div>
-          <button className={styles.button2}>
+          <button className={styles.button2} onClick={() => { }}>
             <div className={styles.button1}>
               <div className={styles.buttonText}>Get Started</div>
             </div>
@@ -335,7 +338,7 @@ const DarkModeWeb: FunctionComponent = () => {
             Discover whats popular on linkshub and make your project look
             stunning and professional
           </div>
-          <button className={styles.button4}>
+          <button className={styles.button4} onClick={() => { }}>
             <div className={styles.button1}>
               <div className={styles.buttonText}>Join Us Now</div>
             </div>
