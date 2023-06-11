@@ -1,9 +1,29 @@
-import { FunctionComponent } from "react";
-import styles from "./DarkModeWeb.module.css";
-const DarkModeWeb: FunctionComponent = () => {
+// NewDarkModeWeb
+import React from "react";
+import Home from "../Components/Home";
+
+const NewDarkModeWeb = () => {
   return (
-    <div className={styles.darkModeWeb}>
-      <img
+    <>
+      <Home />
+    </>
+  );
+};
+
+export default NewDarkModeWeb;
+
+
+
+// import { FunctionComponent } from "react";
+
+// const DarkModeWeb: FunctionComponent = () => {
+//   return (
+
+//     <div className={styles.darkModeWeb}>
+
+
+
+  /* <img
         className={styles.darkModeWebChild}
         alt=""
         src="/group-2607536.svg"
@@ -18,36 +38,14 @@ const DarkModeWeb: FunctionComponent = () => {
         className={styles.heroShapeStars}
         alt=""
         src="/hero-shape-stars.svg"
-      />
-      <div className={styles.component1Parent}>
-        <div className={styles.component1}>
-          <div className={styles.component1Child} />
-          <div className={styles.linkshub}>
-            <span>Links</span>
-            <span className={styles.hub}>Hub</span>
-          </div>
-        </div>
-        <div className={styles.landingPageTitleTextParent}>
-          <a className={styles.landingPageTitleText}>
-            <div className={styles.home}>HOME</div>
-            <div className={styles.landingPageTitleTextChild} />
-          </a>
-          <a className={styles.landingPageTitleText1}>
-            <div className={styles.home}>ABOUT US</div>
-            <div className={styles.landingPageTitleTextItem} />
-          </a>
-          <div className={styles.landingPageTitleText2}>
-            <div className={styles.home}>RESOURCES</div>
-            <div className={styles.landingPageTitleTextInner} />
-          </div>
-          <div className={styles.landingPageTitleText2}>
-            <div className={styles.home}>CONTACT</div>
-            <div className={styles.frameDiv} />
-          </div>
-        </div>
-        <img className={styles.wbSunnyIcon} alt="" src="/wb-sunny.svg" />
-      </div>
-      <div className={styles.footer}>
+      /> */
+
+
+// {
+  /* FOOTER */
+// }
+// {
+  /* <div className={styles.footer}>
         <div className={styles.logoFooterParent}>
           <div className={styles.logoFooter}>
             <div className={styles.lineParent}>
@@ -100,8 +98,14 @@ const DarkModeWeb: FunctionComponent = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className={styles.trendingSec1}>
+      </div> */
+// }
+
+// {
+  /* TRENDING SECTION */
+// }
+// {
+  /* <div className={styles.trendingSec1}>
         <div className={styles.trendingResources}>
           <span>Trending</span>
           <span className={styles.forA}> Resources</span>
@@ -145,16 +149,25 @@ const DarkModeWeb: FunctionComponent = () => {
             >{`View all resources >>`}</div>
           </div>
         </div>
-      </div>
-      <div className={styles.groupWrapper}>
+      </div> */
+// }
+
+// {
+  /* <div className={styles.groupWrapper}>
         <img className={styles.groupIcon} alt="" src="/group.svg" />
-      </div>
-      <button className={styles.button}>
+      </div> */
+// }
+
+// {
+  /* <button className={styles.button}>
         <div className={styles.button1}>
           <div className={styles.buttonText}>Get Started</div>
         </div>
-      </button>
-      <div className={styles.component2Parent}>
+      </button> */
+// }
+
+// {
+  /* <div className={styles.component2Parent}>
         <div className={styles.component2}>
           <div className={styles.component2Child} />
           <div className={styles.linkshub}>
@@ -177,9 +190,15 @@ const DarkModeWeb: FunctionComponent = () => {
           </p>
           <p className={styles.stunningWebsite}>stunning website</p>
         </div>
-      </div>
-      <img className={styles.component9Icon} alt="" src="/component-9.svg" />
-      <div className={styles.aboutUsParent}>
+      </div> */
+// }
+
+// {
+  /* <img className={styles.component9Icon} alt="" src="/component-9.svg" /> */
+// }
+
+// {
+  /* <div className={styles.aboutUsParent}>
         <div className={styles.trendingResources}>
           <span>{`About  `}</span>
           <span className={styles.us}>Us</span>
@@ -223,8 +242,11 @@ const DarkModeWeb: FunctionComponent = () => {
             src="/illustration.svg"
           />
         </div>
-      </div>
-      <div className={styles.howFixitWorks}>
+      </div> */
+// }
+
+// {
+  /* <div className={styles.howFixitWorks}>
         <div className={styles.title}>
           <div className={styles.support}>GETTING STARTED</div>
           <div className={styles.howLinkshubWorksContainer}>
@@ -319,12 +341,18 @@ const DarkModeWeb: FunctionComponent = () => {
             </div>
           </button>
         </div>
-      </div>
-      <div className={styles.openSourceContainer}>
+      </div> */
+// }
+
+// {
+  /* <div className={styles.openSourceContainer}>
         {`Open source | `}
         <span className={styles.links}>MIT License</span> 2023 LinksHub
-      </div>
-      <div className={styles.frameGroup}>
+      </div> */
+// }
+
+// {
+  /* <div className={styles.frameGroup}>
         <div className={styles.joinLinkshubCommunityParent}>
           <div className={styles.trendingResources}>
             <span>Join Links</span>
@@ -342,8 +370,11 @@ const DarkModeWeb: FunctionComponent = () => {
           </button>
         </div>
         <img className={styles.imagesIcon} alt="" src="/images.svg" />
-      </div>
-      <div className={styles.theBestChoiceForCreativesParent}>
+      </div> */
+// }
+
+// {
+  /* <div className={styles.theBestChoiceForCreativesParent}>
         <div className={styles.theBestChoiceContainer}>
           <span>{`The Best Choice For `}</span>
           <span className={styles.us}>Creatives Like You</span>
@@ -397,9 +428,13 @@ const DarkModeWeb: FunctionComponent = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div> */
+// }
+
+// {
+  /* </div>
   );
 };
 
-export default DarkModeWeb;
+export default DarkModeWeb; */
+// }
